@@ -16,7 +16,7 @@ struct ContentView: View {
             Text("First View")
                 .font(.title)
                 .tabItem {
-                    VStack {
+                    HStack {
                         Image("first")
                         Text("First")
                     }
@@ -25,12 +25,21 @@ struct ContentView: View {
             Text("Second View")
                 .font(.title)
                 .tabItem {
-                    VStack {
+                    HStack {
                         Image("second")
                         Text("Second")
                     }
                 }
-                .tag(1)
+            .tag(1)
+            Text("Third View")
+            .font(.title)
+            .tabItem {
+                HStack {
+                    Image("first")
+                    Text("Third")
+                }
+            }
+            .tag(2)
         }
     }
 }
